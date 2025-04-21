@@ -59,5 +59,6 @@ const shell = spawn(isWindows ? "cmd.exe" : "/bin/sh", [], {
 
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
+  console.log(process.env)
   console.log(`🖥️  BackShell running at http://localhost:${PORT}`);
 });
